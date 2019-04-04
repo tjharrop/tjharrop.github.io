@@ -1,0 +1,12 @@
+- name: openfisca-nsw
+  html_url: https://github.com/digitalnsw/openfisca-nsw
+  description: Openfisca country package for New South Wales
+  language: Python
+- name: legislation-explorer
+  html_url: https://github.com/digitalnsw/legislation-explorer
+  description: React legislation explorer for NSW Openfisca
+  language: JavaScript
+- name: NSW-jekyll-theme
+  html_url: https://github.com/tjharrop/NSW-jekyll-theme
+  description: Jekyll theme for NSW Government websites
+  language: HTML

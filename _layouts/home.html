@@ -9,12 +9,18 @@
     </div>
 
     <div class="my-6">
-      {% include projects.html %}
+      {% include projects-from-data.html %}
     </div>
 
-    {% if site.topics %}
+    <!-- {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
+      </div>
+    {% endif %} -->
+
+    {% if site.data.medium_posts %}
+      <div class="my-6">
+        {% include thoughts-from-medium.html %}
       </div>
     {% endif %}
 
@@ -38,15 +44,19 @@
           </div>
         {% endunless %}
 
-        {% include projects.html %}
+        {% include projects-from-data.html %}
 
-        {% if site.topics %}
+        <!-- {% if site.topics %}
           {% include interests.html %}
-        {% endif %}
+        {% endif %} -->
 
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
         {% endunless %}
+
+        {% if site.data.medium_posts %}
+          {% include thoughts-from-medium.html %}
+        {% endif %}
       </div>
     </div>
   </div>
